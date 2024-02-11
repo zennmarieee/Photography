@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.hero-section {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 1em;
+}
+
+
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.hero-image {
+    margin: 1em auto 0;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+
+.hero-image img {
+    width: 100%;
+}
+
+main {
+    padding: 0 1.5em;
+    max-width: 1080px;
+    margin: auto;
+}
+
+/* First Section */
+
+
+
+.nature-picture {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.nature-picture h2 {
+    max-width: 20ch;
+    margin: 1.5em auto;
+}
+
+.nature-picture .image-container {
+    max-width: 400px;
+    margin: 1.5em 0;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 600px;
+    
+
+}
+
+.nature-picture .image-container img {
+    width: 100%;
+
+}
+
+/* Second Section */
+
+
+.beach-picture {
+    margin: 2em 0;
+}
+
+.beach-picture .beach-container {
+    max-width:max-content;
+    margin: auto;
+    padding: 1em;
+    
+}
+
+.beach-picture h2 {
+    max-width: 40ch;
+}
+
+.beach-picture .image-container {
+    max-width: 1000px;
+    margin: 1em 0;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 650px;
+    
+}
+
+.beach-picture .image-container img {
+    width: 100%;
+}
+
+/* Third Section */
+
+.schoolmate-picture {
+    position: relative;
+    margin-top: 3em;
+}
+
+.schoolmate-picture .text-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-lr;
+}
+
+.schoolmate-picture .text-2 {
+    position: absolute;
+    right: 0;
+    writing-mode: vertical-lr;
+    top: 25%;
+    transform: translateY(-25%);
+}
+
+
+.schoolmate-picture .grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(100px, 400px)); */
+    grid-template-columns: repeat(auto-fill, minmax(60px, 400px));
+    gap: 0.5em;
+    justify-content: center;
+}
+
+
+
+
+.schoolmate-picture .image-container {
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+}
+
+.schoolmate-picture .image-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    margin-top: 3em;
+    height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+#about p {
+    margin-top: 3em;
+    max-width: 30ch;
+}
+
+#about .author-image {
+    max-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 200px;
+
+}
+
+#about .author-image img {
+    width: 100%;
+}
+
+
+/* FOOTER */
+
+
+footer .email {
+    background-color: grey;
+    padding: 0.5em 1em;
+    max-width: max-content;
+    margin: auto;
+}
+
+footer .copyright {
+    max-width: max-content;
+    margin: 2em auto;
+ 
+
+}
+
+footer .copyright span {
+    color: red;
+    
+}
+
+
+
+@media (max-width: 600px) {
+    #about {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+        text-align: center;
+    }
+
+    #about p {
+        margin-top: 1em;
+    }
+}
+
+
+@media (max-width: 960px) {
+    
+    .schoolmate-picture .text-1{
+        position: inherit;
+        writing-mode: unset;
+        text-align: center;
+        margin: 1em;
+    }
+
+    .schoolmate-picture .text-2 {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .nature-picture {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        
+    }
+
+
+
+    .nature-picture .image-container {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+    }
+}
