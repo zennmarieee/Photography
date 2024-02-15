@@ -1,3 +1,16 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+.dark-theme {
+    --primary-color: rgb(23, 22, 30);
+    --secondary-color: rgb(238, 236, 236);
+}
+i {
+    cursor: pointer;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +22,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 
 .hero-section {
     max-width: 1300px;
@@ -19,11 +36,11 @@ html {
 
 
 nav {
-    background-color: white;
+    
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 nav ul {
@@ -34,7 +51,7 @@ nav ul {
 
 nav ul a {
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 
 
